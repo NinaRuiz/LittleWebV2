@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
+import {RouterModule, Routes} from '@angular/router';
+
+const appRoutes: Routes = [
+  {path: '', component: MainPageComponent}
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +19,8 @@ import { MainPageComponent } from './main-page/main-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
