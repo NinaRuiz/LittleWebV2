@@ -12,6 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { RockPaperScissorsPageComponent } from './rock-paper-scissors-page/rock-paper-scissors-page.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 const appRoutes: Routes = [
   {path: '', component: MainPageComponent}
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     MainPageComponent,
-    RockPaperScissorsPageComponent
+    RockPaperScissorsPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatToolbarModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
