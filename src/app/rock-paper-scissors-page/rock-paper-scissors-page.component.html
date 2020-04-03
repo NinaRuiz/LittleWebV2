@@ -1,1 +1,65 @@
-<a href="src/app/main-page/main-page.component.html"><button mat-raised-button color="primary" id="try">Back</button></a>
+<mat-toolbar>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <a href="" routerLink="">
+    <button mat-raised-button color="primary" id="backButton">Back</button>
+  </a>
+ <mat-menu #menu="matMenu">
+    <button mat-menu-item>About me</button>
+    <button mat-menu-item>Contact me</button>
+  </mat-menu>
+</mat-toolbar>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      Rock, Paper, Scissors
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    This is just a little game made by me while i was learning JavaScript. This was my first program with made with Java
+    and my first program with JavaScript also.
+  </mat-card-content>
+  <mat-tab-group>
+    <mat-tab label="Game">
+      <mat-card>
+        <mat-card-title>
+          Contador:
+        </mat-card-title>
+        <mat-card-content>
+          Player: <mat-label id="playerResult"></mat-label>
+        </mat-card-content>
+        <mat-card-content>
+          Computer: <mat-label id="computerResult"></mat-label>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-title>
+          Play:
+        </mat-card-title>
+        <mat-card-content>
+          Computer choise: <mat-label id="computerChoise"></mat-label>
+        </mat-card-content>
+        <mat-card-content>
+          Winner: <mat-label id="winner"></mat-label>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-title>
+          Choose one:
+        </mat-card-title>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" id="rock">Rock</button>
+          <button mat-raised-button color="primary" id="paper">Paper</button>
+          <button mat-raised-button color="primary" id="scissors">Scissors</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Code">
+      <mat-card>
+
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+  <mat-card-actions align="center">
+
+  </mat-card-actions>
+</mat-card>

@@ -13,10 +13,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { RockPaperScissorsPageComponent } from './rock-paper-scissors-page/rock-paper-scissors-page.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
 
 const appRoutes: Routes = [
-  {path: '', component: MainPageComponent}
-]
+  {path: '', component: MainPageComponent},
+  {path: 'rock-paper-scissors-page', component: RockPaperScissorsPageComponent},
+];
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatCardModule,
     MatDividerModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatTabsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
